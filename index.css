@@ -1,0 +1,139 @@
+body,html {
+    margin:0 auto;
+    height: 100%;
+    display: block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 1.0s ease-in-out;
+    /*
+    background: radial-gradient(circle at center,#ebf8e1 10%, #aad643 30%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Martel', serif;
+    font-weight: 400;
+}
+
+h1 {
+    position:absolute;
+    font-size: 100px;
+    left:41%;
+    top:10%;
+}
+
+h2 {
+    position: absolute;
+    left:42%;
+    top:30%;
+}
+
+#logo {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: auto;
+}
+
+#logo button {
+    background-color: transparent;
+    border-radius: 100%;
+    border-style: hidden;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+#logo img {
+    border-style:hidden;
+    border-radius: 100%;
+    width: 10%;
+    height: auto;
+    animation: pulse 3s infinite;
+
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #aad643;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px #aad643;
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #aad643;
+	}
+}
+
+.topBox {
+    display: inline-block;
+    border-style: groove;
+    position:fixed;
+    top:1%;
+    width: 12%;
+    height: 30%;
+}
+
+.botBox {
+    display: inline-block;
+    border-style: groove;
+    position:fixed;
+    bottom: 7.5%;
+    width: 12%;
+    height: 30%;
+}
+
+#topBox1, #botBox1 {
+    left:29.5%
+}
+
+#topBox2, #botBox2 {
+    left:58%;
+}
+
+.botBox, .topBox {
+    visibility: hidden;
+}
+
+
+
+
+@keyframes pop-up_1 {
+    100% {
+        transform: translate(115%,200%) scale(0.1,0.1);
+    }
+}
+
+@keyframes pop-up_2 {
+    100% {
+        transform: translate(115%,0%) scale(0.1,0.1);
+    }
+}
+
+@keyframes pop-up_3 {
+    100% {
+        transform: translate(-115%,200%) scale(0.1,0.1);
+    }
+}
+
+@keyframes pop-up_4 {
+    100% {
+        transform: translate(-115%,0%) scale(0.1,0.1);
+    }
+}
